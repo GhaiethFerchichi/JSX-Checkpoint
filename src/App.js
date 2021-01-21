@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import img from "./img/imageInSrc.jpg";
+import vid from "./vid/myVideo.mp4";
+
+import "./css/style.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='divStyle'></div>
+      <h1 className='title red'>Ghaieth Ferchichi</h1>
+      <br />
+      <img src={img} alt='imageInSrc' />
+      <br />
+      <img src='/imageInPublic.jpg' alt='imageInPublic' />
+      <video width='320px' height='240px' controls>
+        <source src={vid} type='video/mp4' />
+      </video>
     </div>
   );
 }
